@@ -2,7 +2,9 @@ import { Link } from 'react-router-dom';
 
 const questionsConfig = [
   { name: 'Accordion', path: '/accordion' },
-//   { name: 'Carousel', path: '/carousel' },
+  { name: 'Product category filter', path: '/filter' },
+  { name: 'Mortgage Calculator', path: '/mortgage' },
+  { name: 'Pagination', path: '/pagination' },
 ];
 
 function Home() {

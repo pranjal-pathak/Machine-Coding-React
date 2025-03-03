@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
 export default function Accordion() {
   const [activeItem, setActiveItem] = useState();
@@ -26,15 +27,15 @@ export default function Accordion() {
     setActiveItem(index);
   };
   return (
-    <div >
+    <div>
       {items.map((item, index) => (
-          <div className="flex flex-col py-2 px-5 border-b-2" key={item.id}>
-            <div  onClick={(e) => handleClick(e, index)}>
-              {item.name} <span aria-hidden={true} className="accordion-icon" />
-            </div>
-            {activeItem === index && <div> {item.description}</div>}
-          </div>)
-      )}
+        <div className="flex flex-col py-2 px-5 border-b-2" key={item.id}>
+          <div className="flex hover:cursor-pointer" onClick={(e) => handleClick(e, index)}>
+            {item.name} <ChevronDown />
+          </div>
+          {activeItem === index && <div> {item.description}</div>}
+        </div>
+      ))}
     </div>
   );
 }
