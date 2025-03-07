@@ -24,16 +24,22 @@ export default function Accordion() {
     },
   ];
   const handleClick = (e, index) => {
+    if (index == activeItem)
+      setActiveItem();
+    else
     setActiveItem(index);
   };
   return (
-    <div>
+    <div className="p-40 bg-gray-900 text-white h-screen w-screen flex flex-col gap-2 items-left">
       {items.map((item, index) => (
-        <div className="flex flex-col py-2 px-5 border-b-2" key={item.id}>
-          <div className="flex hover:cursor-pointer" onClick={(e) => handleClick(e, index)}>
-            {item.name} <ChevronDown />
+        <div className="flex flex-col  py-2 px-5 border-b-2 " key={item.id}>
+          <div
+            className="flex hover:cursor-pointer text-red-400"
+            onClick={(e) => handleClick(e, index)}
+          >
+            {item.name} <ChevronDown className='ml-2'/>
           </div>
-          {activeItem === index && <div> {item.description}</div>}
+          {activeItem === index && <div className='text-gray-300 py-2 px-4'> {item.description}</div>}
         </div>
       ))}
     </div>

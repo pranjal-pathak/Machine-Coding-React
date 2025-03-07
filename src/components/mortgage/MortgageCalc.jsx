@@ -57,11 +57,11 @@ const MortgageCalc = () => {
   };
 
   return (
-    <div className="m-10 max-w-[50%] border bg-gray-900 border-gray-900 p-4 rounded-lg">
+    <div className="m-10 max-w-[50%] border bg-black/90 border-gray-900 p-4 rounded-lg">
       <div className="flex flex-col gap-2">
         {inputConfig.map((item) => (
           <div key={item.id} className="flex flex-col">
-            <label htmlFor={item.id} className="text-red-400">
+            <label htmlFor={item.id} className="text-gray-400">
               {item.title}
             </label>
             <div className="flex items-center gap-1">
@@ -80,13 +80,13 @@ const MortgageCalc = () => {
 
         <div>
           <button
-            className="bg-red-500 text-white font-semibold px-2 py-1 rounded-lg mt-2 hover:bg-red-800"
+            className="bg-green-800 border text-white font-normal px-4 py-2 rounded-lg mt-2 hover:bg-red-800"
             onClick={() => calculateMortgage(principal, rate, time)}
           >
             Calculate
           </button>
         </div>
-        <div className="text-white flex items-center gap-1">
+        <div className="text-white flex items-center gap-1 mt-2">
           <IndianRupee className="size-4" />
           {result}
         </div>

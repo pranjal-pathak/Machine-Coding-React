@@ -22,12 +22,12 @@ const Filter = () => {
   };
 
   return (
-    <div className="bg-[#d3d3d3]/50 min-h-screen">
-      <div className="flex gap-2">
+    <div className="bg-emerald-900 min-h-screen">
+      <div className="flex gap-2 items-center justify-center pt-10">
         {categories.map((category) => {
           const bgColor = currFilters.includes(category)
-            ? 'bg-black text-white'
-            : 'bg-white text-black';
+            ? 'bg-black text-yellow-500 hover:bg-black/50'
+            : 'bg-yellow-300 text-black hover:bg-yellow-200';
           return (
             <div
               className={`bg-gray p-2 border border-black/30 hover:cursor-pointer ${bgColor}`}
@@ -38,11 +38,11 @@ const Filter = () => {
           );
         })}
       </div>
-      <div className="flex flex-wrap gap-2 border border-top mt-10 p-4">
+      <div className="flex flex-wrap gap-2 border border-gray-300 mt-10 p-4 mx-40 items-center justify-center">
         {products
           .filter((item) => currFilters.length === 0 || currFilters.includes(item.category))
           .map((product) => (
-            <div key={product.id} className="p-2 border border-yellow-500">
+            <div key={product.id} className="p-2 border border-yellow-500 text-yellow-500">
               {product.name}
             </div>
           ))}
