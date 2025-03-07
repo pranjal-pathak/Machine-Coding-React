@@ -5,6 +5,7 @@ import Accordion from './components/accordion/Accordion';
 import Filter from './components/product-filter/Filter';
 import MortgageCalc from './components/mortgage/MortgageCalc';
 import Pagination from './components/pagination/Pagination';
+import ProgressBar from './components/progress-bar/ProgressBar';
 // import Carousel from './components/Carousel';
 
 function App() {
@@ -17,8 +18,7 @@ function App() {
         <Route path="/filter" element={<Filter />} />
         <Route path="mortgage" element={<MortgageCalc />} />
         <Route path="pagination" element={<Pagination />} />
-
-        {/* <Route path="/carousel" element={<Carousel />} /> */}
+        <Route path="progressbar" element={<ProgressBar />} />
       </Routes>
     </>
   );

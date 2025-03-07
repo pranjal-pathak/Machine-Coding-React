@@ -5,6 +5,7 @@ const questionsConfig = [
   { name: 'Product category filter', path: '/filter' },
   { name: 'Mortgage Calculator', path: '/mortgage' },
   { name: 'Pagination', path: '/pagination' },
+  { name: 'Progress Bar', path: '/progressbar' },
 ];
 
 function Home() {
@@ -16,7 +17,7 @@ function Home() {
         {questionsConfig.map(({ name, path }, index) => (
           <li key={index}>
             <Link to={path} className="text-blue-400 hover:text-blue-300 transition duration-200">
-                   {name}
+              {name}
             </Link>
           </li>
         ))}
