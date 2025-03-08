@@ -6,6 +6,7 @@ const questionsConfig = [
   { name: 'Mortgage Calculator', path: '/mortgage' },
   { name: 'Pagination', path: '/pagination' },
   { name: 'Progress Bar', path: '/progressbar' },
+  { name: 'To Do List', path: '/todo' },
 ];
 
 function Home() {
