@@ -7,6 +7,7 @@ const questionsConfig = [
   { name: 'Pagination', path: '/pagination' },
   { name: 'Progress Bar', path: '/progressbar' },
   { name: 'To Do List', path: '/todo' },
+  { name: 'Carousel', path: '/carousel' },
 ];
 
 function Home() {
