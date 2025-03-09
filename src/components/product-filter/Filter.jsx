@@ -38,14 +38,16 @@ const Filter = () => {
           );
         })}
       </div>
-      <div className="flex flex-wrap gap-2 border border-gray-300 mt-10 p-4 mx-40 items-center justify-center">
-        {products
-          .filter((item) => currFilters.length === 0 || currFilters.includes(item.category))
-          .map((product) => (
-            <div key={product.id} className="p-2 border border-yellow-500 text-yellow-500">
-              {product.name}
-            </div>
-          ))}
+      <div className='flex justify-center'>
+        <div className="flex flex-wrap gap-2 border border-gray-300 mt-10 p-4 max-w-[500px] items-center justify-center">
+          {products
+            .filter((item) => currFilters.length === 0 || currFilters.includes(item.category))
+            .map((product) => (
+              <div key={product.id} className="p-2 border border-yellow-500 text-yellow-500">
+                {product.name}
+              </div>
+            ))}
+        </div>
       </div>
     </div>
   );
