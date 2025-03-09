@@ -10,6 +10,7 @@ const questionsConfig = [
   { name: 'Carousel', path: '/carousel' },
   { name: 'Auto Complete Search Box - Debouncing + Caching', path: '/auto' },
   { name: 'Modal', path: '/modal' },
+  { name: 'Explorer', path: '/explorer' },
 ];
 
 function Home() {

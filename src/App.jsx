@@ -10,6 +10,7 @@ import ToDO from './components/todo/ToDO';
 import Carousel from './components/carousel/Carousel';
 import AutoComplete from './components/auto-complete/AutoComplete';
 import Modal from './components/modal/Modal';
+import Explorer from './components/file-explorer/Explorer';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="carousel" element={<Carousel />} />
         <Route path="auto" element={<AutoComplete />} />
         <Route path="modal" element={<Modal />} />
+        <Route path="explorer" element={<Explorer />} />
       </Routes>
     </>
   );
