@@ -45,8 +45,8 @@ const AutoComplete = () => {
 
       {showSuggetions && (
         <div className="flex flex-col justify-left items-left w-[500px]  border-gray-200 mt-5 rounded-lg shadow-lg max-h-[400px] overflow-auto">
-          {suggestions.map((suggestion) => (
-            <span key={suggestion.id} className="p-2">
+          {suggestions.map((suggestion,index) => (
+            <span key={suggestion.id} className="p-2" style={{backgroundColor: index%2==0? "#f7f7f7":"white"}}>
               {suggestion.name}
             </span>
           ))}
