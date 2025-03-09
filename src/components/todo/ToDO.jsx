@@ -16,6 +16,9 @@ const ToDO = () => {
       setEntry('');
     } else {
       setError('Attempt to add more emptiness');
+      setTimeout(() => {
+        setError(null);
+      }, 2000); // Error disappears after 2 seconds
     }
   };
     

@@ -8,6 +8,8 @@ const questionsConfig = [
   { name: 'Progress Bar', path: '/progressbar' },
   { name: 'To Do List', path: '/todo' },
   { name: 'Carousel', path: '/carousel' },
+  { name: 'Auto Complete Search Box - Debouncing + Caching', path: '/auto' },
+  { name: 'Modal', path: '/modal' },
 ];
 
 function Home() {

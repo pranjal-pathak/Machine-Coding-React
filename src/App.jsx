@@ -8,8 +8,8 @@ import Pagination from './components/pagination/Pagination';
 import ProgressBar from './components/progress-bar/ProgressBar';
 import ToDO from './components/todo/ToDO';
 import Carousel from './components/carousel/Carousel';
-
-// import Carousel from './components/Carousel';
+import AutoComplete from './components/auto-complete/AutoComplete';
+import Modal from './components/modal/Modal';
 
 function App() {
   return (
@@ -23,7 +23,9 @@ function App() {
         <Route path="pagination" element={<Pagination />} />
         <Route path="progressbar" element={<ProgressBar />} />
         <Route path="todo" element={<ToDO />} />
-        <Route path="carousel" element={<Carousel />}/>
+        <Route path="carousel" element={<Carousel />} />
+        <Route path="auto" element={<AutoComplete />} />
+        <Route path="modal" element={<Modal />} />
       </Routes>
     </>
   );

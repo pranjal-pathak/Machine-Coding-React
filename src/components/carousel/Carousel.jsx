@@ -6,7 +6,7 @@ const Carousel = () => {
     useEffect(() => {
         let timer = setTimeout(() => {
             handleClick("next")
-        }, 3000);
+        }, 1500);
 
         return () => clearTimeout(timer);
     },[activeImage])
@@ -28,7 +28,7 @@ const Carousel = () => {
     }
   return (
     <div>
-      <div className="flex justify-center mt-20 h-[600px] ">
+      <div className="flex justify-center mt-20 h-[600px]">
         <img src={imagePathConfig[activeImage]} alt="carousel-image" />
       </div>
       <div className="flex justify-center gap-2 mt-10 hover:cursor-pointer ">
